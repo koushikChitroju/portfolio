@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Koushik Chitroju | Full Stack Developer</title>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <!-- Background Animation Canvas -->
+    <canvas id="particles-bg"></canvas>
+
+    <!-- Navigation -->
+    <nav class="navbar transition-all" id="navbar">
+        <div class="nav-container">
+            <a href="#home" class="logo">
+                <span class="logo-text"></span>
+            </a>
+            <ul class="nav-links">
+                <li><a href="#home" class="nav-link active">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#skills" class="nav-link">Skills</a></li>
+                <li><a href="#projects" class="nav-link">Projects</a></li>
+                <li><a href="#certifications" class="nav-link">Certifications</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+            <div class="menu-toggle" id="mobile-menu">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero fade-in">
+        <div class="hero-container">
+            <div class="hero-text-content">
+                <p class="greeting">HELLO, I'M</p>
+                <h1 class="name-title">Koushik <span class="highlight">Chitroju</span></h1>
+                <h2 class="role-title">I am a <span class="typed-text"></span><span class="cursor">&nbsp;</span></h2>
+                <p class="hero-description">
+                    A dedicated Full Stack Developer and CSE student with a passion for building scalable web applications. I specialize in modern technologies like React, Node.js, and MongoDB to architect impactful, user-centric digital experiences.
+                </p>
+                <div class="cta-buttons-grid">
+    <a href="#projects" class="btn btn-outline">View Projects</a>
+    <a href="resume.pdf" download class="btn btn-outline">Download CV</a>
+    <a href="resume.pdf" target="_blank" class="btn btn-outline">View CV</a>
+    <a href="#contact" class="btn btn-outline">Contact Me</a>
+</div>
+            </div>
+            
+            <div class="hero-image-wrapper">
+                <div class="image-frame" id="imageFrame">
+                    <img src="profile.jpg" alt="Koushik Chitroju" id="profileImage">
+                </div>
+            </div>
+        </div>
+        <div class="hero-scroll-indicator">
+            <a href="#about"><i class="fas fa-chevron-down"></i></a>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about section-padding slide-up">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">About <span class="highlight">Me</span></h2>
+                <div class="underline"></div>
+            </div>
+
+            <div class="about-grid">
+                <div class="about-text-content glass-card">
+                    <h3>Professional Summary</h3>
+                    <p>I am a dedicated Computer Science and Engineering student at Lovely Professional University with
+                        a strong passion for Full Stack Web Development. I have built a solid foundation in programming
+                        languages including C++, Python, Java, and JavaScript, along with modern frameworks like React
+                        and Node.js.</p>
+                    <p>My development journey is driven by a focus on creating impactful digital solutions, from
+                        educational platforms to personal portfolio websites. I thrive in collaborative environments,
+                        leveraging my problem-solving skills and adaptability to deliver efficient, reliable software.
+                    </p>
+
+                    <div class="interests-container mt-4">
+                        <h4>Interests</h4>
+                        <div class="tags-wrapper">
+                            <span class="tag">Web Development</span>
+                            <span class="tag">Problem Solving</span>
+                            <span class="tag">UI/UX Design</span>
+                            <span class="tag">Open Source</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="education-content glass-card">
+                    <h3>Education Timeline</h3>
+                    <div class="timeline">
+                        <div class="timeline-item">
+                            <div class="timeline-dot"></div>
+                            <div class="timeline-date">May 2021 - Present</div>
+                            <h4 class="timeline-title">Bachelor of Technology - CSE</h4>
+                            <p class="timeline-org">Lovely Professional University, Phagwara, Punjab</p>
+                            <p class="timeline-score badge">CGPA: 7.4</p>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="timeline-dot"></div>
+                            <div class="timeline-date">May 2020 - May 2021</div>
+                            <h4 class="timeline-title">Intermediate (PCM)</h4>
+                            <p class="timeline-org">Sri Chaitanya Junior College, Hyderabad, Telangana</p>
+                            <p class="timeline-score badge">Percentage: 90.7%</p>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="timeline-dot"></div>
+                            <div class="timeline-date">April 2019 - March 2020</div>
+                            <h4 class="timeline-title">Matriculation</h4>
+                            <p class="timeline-org">Sri Chaitanya School, Hyderabad, Telangana</p>
+                            <p class="timeline-score badge">Percentage: 100%</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills section-padding slide-up">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Technical <span class="highlight">Skills</span></h2>
+                <div class="underline"></div>
+            </div>
+
+            <div class="skills-grid">
+                <div class="skill-category glass-card hover-glow">
+                    <div class="icon-header">
+                        <i class="fas fa-code"></i>
+                        <h3>Languages</h3>
+                    </div>
+                    <div class="skill-badges">
+                        <span class="skill-badge">C++</span>
+                        <span class="skill-badge">Python</span>
+                        <span class="skill-badge">C</span>
+                        <span class="skill-badge">Java</span>
+                        <span class="skill-badge">JavaScript</span>
+                        <span class="skill-badge">HTML/CSS</span>
+                    </div>
+                </div>
+
+                <div class="skill-category glass-card hover-glow">
+                    <div class="icon-header">
+                        <i class="fas fa-laptop-code"></i>
+                        <h3>Frontend</h3>
+                    </div>
+                    <div class="skill-badges">
+                        <span class="skill-badge">React.js</span>
+                        <span class="skill-badge">Tailwind CSS</span>
+                        <span class="skill-badge">JavaScript</span>
+                    </div>
+                </div>
+
+                <div class="skill-category glass-card hover-glow">
+                    <div class="icon-header">
+                        <i class="fas fa-server"></i>
+                        <h3>Backend & Database</h3>
+                    </div>
+                    <div class="skill-badges">
+                        <span class="skill-badge">Node.js</span>
+                        <span class="skill-badge">Express.js</span>
+                        <span class="skill-badge">MongoDB</span>
+                        <span class="skill-badge">MySQL</span>
+                        <span class="skill-badge">DBMS</span>
+                    </div>
+                </div>
+
+                <div class="skill-category glass-card hover-glow">
+                    <div class="icon-header">
+                        <i class="fas fa-tools"></i>
+                        <h3>Tools & Platforms</h3>
+                    </div>
+                    <div class="skill-badges">
+                        <span class="skill-badge">VS Code</span>
+                        <span class="skill-badge">GitHub</span>
+                        <span class="skill-badge">Postman</span>
+                        <span class="skill-badge">XAMPP</span>
+                    </div>
+                </div>
+
+                <div class="skill-category glass-card hover-glow md-span-2">
+                    <div class="icon-header">
+                        <i class="fas fa-users"></i>
+                        <h3>Soft Skills</h3>
+                    </div>
+                    <div class="skill-badges center-badges">
+                        <span class="skill-badge">Problem Solving</span>
+                        <span class="skill-badge">Team Player</span>
+                        <span class="skill-badge">Adaptability</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects section-padding slide-up">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Featured <span class="highlight">Projects</span></h2>
+                <div class="underline"></div>
+                <p class="section-subtitle">A showcase of my work spanning web applications, APIs, and responsive
+                    interfaces.</p>
+            </div>
+
+            <div class="projects-grid">
+                <!-- Project 1 -->
+                <div class="project-card glass-card">
+                    <div class="project-icon-wrapper">
+                        <i class="fas fa-globe"></i>
+                    </div>
+                    <h3 class="project-title">Portfolio Website</h3>
+                    <p class="project-desc">Designed and developed a personal portfolio website to showcase skills and
+                        projects using React and Tailwind CSS. Focused on building a clean, responsive interface
+                        optimized for both mobile and desktop devices.</p>
+                    <div class="project-tags">
+                        <span class="tag-sm">React</span>
+                        <span class="tag-sm">Tailwind CSS</span>
+                        <span class="tag-sm">HTML5</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://github.com/koushikChitroju" target="_blank" class="project-link">
+                            <i class="fab fa-github"></i> Code
+                        </a>
+                        <a href="#" class="project-link primary-text">
+                            <i class="fas fa-external-link-alt"></i> Live Demo
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Project 2 -->
+                <div class="project-card glass-card">
+                    <div class="project-icon-wrapper">
+                        <i class="fas fa-graduation-cap"></i>
+                    </div>
+                    <h3 class="project-title">Gramavidya - E-Learning</h3>
+                    <p class="project-desc">Developed a full-stack e-learning web application with separate dashboards
+                        for students, teachers, and admin. Implemented authentication and authorization using backend
+                        APIs and protected routes with course management features.</p>
+                    <div class="project-tags">
+                        <span class="tag-sm">React</span>
+                        <span class="tag-sm">Node.js</span>
+                        <span class="tag-sm">Express.js</span>
+                        <span class="tag-sm">MongoDB</span>
+                        <span class="tag-sm">Tailwind</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://github.com/koushikChitroju" target="_blank" class="project-link">
+                            <i class="fab fa-github"></i> Code
+                        </a>
+                        <a href="#" class="project-link primary-text">
+                            <i class="fas fa-external-link-alt"></i> Live Demo
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Project 3 -->
+                <div class="project-card glass-card">
+                    <div class="project-icon-wrapper">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <h3 class="project-title">Student Management System</h3>
+                    <p class="project-desc">Built a console-based system to manage student records including adding,
+                        updating, and sorting data. Applied file handling in C++ to store and retrieve student
+                        information efficiently with sorting and searching operations.</p>
+                    <div class="project-tags">
+                        <span class="tag-sm">C++</span>
+                        <span class="tag-sm">File Handling</span>
+                        <span class="tag-sm">Data Structures</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://github.com/koushikChitroju" target="_blank" class="project-link">
+                            <i class="fab fa-github"></i> Code
+                        </a>
+                        <a href="#" class="project-link primary-text">
+                            <i class="fas fa-external-link-alt"></i> Live Demo
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Training & Certifications -->
+    <section id="certifications" class="certifications section-padding slide-up">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Training & <span class="highlight">Certifications</span></h2>
+                <div class="underline"></div>
+            </div>
+
+            <div class="cert-grid">
+                <div class="cert-card glass-card hover-glow">
+                    <i class="fas fa-laptop-code cert-icon"></i>
+                    <div class="cert-content">
+                        <h3>OOP Using C++</h3>
+                        <p>Mastered Object-Oriented Programming concepts in C++ through a one-month intensive summer
+                            training program.</p>
+                        <span class="cert-date badge">Jun 2025 - Jul 2025</span>
+                    </div>
+                </div>
+
+                <div class="cert-card glass-card hover-glow">
+                    <i class="fas fa-robot cert-icon"></i>
+                    <div class="cert-content">
+                        <h3>ChatGPT-4 Prompt Engineering</h3>
+                        <p>Generative AI & LLM certification acquired from Infosys Springboard.</p>
+                        <span class="cert-date badge">Aug 2025</span>
+                    </div>
+                </div>
+
+                <div class="cert-card glass-card hover-glow">
+                    <i class="fas fa-network-wired cert-icon"></i>
+                    <div class="cert-content">
+                        <h3>Bits and Bytes of Networking</h3>
+                        <p>Comprehensive computer networking fundamentals certification completed from Coursera.</p>
+                        <span class="cert-date badge">Sep 2024</span>
+                    </div>
+                </div>
+
+                <div class="cert-card glass-card hover-glow">
+                    <i class="fas fa-mobile-alt cert-icon"></i>
+                    <div class="cert-content">
+                        <h3>Responsive Web Design</h3>
+                        <p>Mastery of CSS Flexbox, Grid, and mobile-first design principles from freeCodeCamp.</p>
+                        <span class="cert-date badge">Oct 2023</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Achievements -->
+            <div class="achievements-section mt-5">
+                <h3 class="sub-section-title text-center mb-4">Core Achievements</h3>
+                <div class="achievements-grid">
+                    <div class="achievement-item glass-card">
+                        <div class="achieve-icon"><i class="fas fa-certificate"></i></div>
+                        <div class="achieve-info">
+                            <h4>Coursera Technical Coursework</h4>
+                            <p>Completed university-level courses from Google, IBM, & UC Boulder.</p>
+                            <span class="achieve-date">Sep 2024</span>
+                        </div>
+                    </div>
+                    <div class="achievement-item glass-card">
+                        <div class="achieve-icon"><i class="fas fa-code"></i></div>
+                        <div class="achieve-info">
+                            <h4>Academic Programming</h4>
+                            <p>Executed tasks in C, C++, Java, Python, and full-stack dev.</p>
+                            <span class="achieve-date">Apr 2024</span>
+                        </div>
+                    </div>
+                    <div class="achievement-item glass-card">
+                        <div class="achieve-icon"><i class="fas fa-trophy"></i></div>
+                        <div class="achieve-info">
+                            <h4>Hackathon Participant</h4>
+                            <p>Developed prototype in a time-bound hackathon working under pressure.</p>
+                            <span class="achieve-date">Dec 2023</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact section-padding slide-up">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Get In <span class="highlight">Touch</span></h2>
+                <div class="underline"></div>
+                <p class="section-subtitle">I'm currently available for internships and new opportunities.</p>
+            </div>
+
+            <div class="contact-grid">
+                <div class="contact-info glass-card">
+                    <h3>Contact Information</h3>
+                    <p class="contact-desc">Feel free to reach out to me via email or connect with me on social media. I
+                        will respond as soon as I can.</p>
+
+                    <div class="contact-methods">
+                        <div class="contact-method">
+                            <div class="icon-circle"><i class="fas fa-envelope"></i></div>
+                            <div class="method-info">
+                                <span>Email</span>
+                                <a href="mailto:ac567891234@gmail.com">ac567891234@gmail.com</a>
+                            </div>
+                        </div>
+                        <div class="contact-method">
+                            <div class="icon-circle"><i class="fas fa-phone-alt"></i></div>
+                            <div class="method-info">
+                                <span>Mobile</span>
+                                <a href="tel:+919849229962">9849229962</a>
+                            </div>
+                        </div>
+                        <div class="contact-method">
+                            <div class="icon-circle"><i class="fas fa-map-marker-alt"></i></div>
+                            <div class="method-info">
+                                <span>Location</span>
+                                <p>Punjab, India</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="contact-form-container glass-card">
+                    <form class="contact-form" id="contactForm">
+                        <div class="form-group">
+                            <label for="name">Your Name</label>
+                            <input type="text" id="name" placeholder="John Doe" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Your Email</label>
+                            <input type="email" id="email" placeholder="john@example.com" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Your Message</label>
+                            <textarea id="message" rows="5" placeholder="How can I help you?" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary w-100">
+                            <span>Send Message</span>
+                            <i class="fas fa-paper-plane"></i>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container footer-content">
+            <div class="footer-logo">
+                <span class="logo-text"></span>
+            </div>
+            <p>&copy; 2026 Koushik Chitroju. All rights reserved.</p>
+            <div class="social-links">
+                <a href="https://github.com/koushikChitroju" target="_blank" class="social-icon hover-float"><i
+                        class="fab fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/koushik-chitroju" target="_blank"
+                    class="social-icon hover-float"><i class="fab fa-linkedin"></i></a>
+            </div>
+        </div>
+        <a href="#home" class="scroll-top" id="scrollTop">
+            <i class="fas fa-arrow-up"></i>
+        </a>
+    </footer>
+
+    <!-- Custom JS -->
+    <script src="script.js"></script>
+</body>
+
+</html>
